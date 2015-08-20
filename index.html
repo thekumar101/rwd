@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>RWD - Foundation and Beyond by Saurav Kumar</title>
+		<meta name="description" content="HTML 5 from basics to intermediate">
+		<meta name="author" content="Saurav Kumar">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!-- Printing and PDF exports -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>RWD</h1>
+					<h3>Responsive Web Design</h3>
+					<p><small>Created by <a target="blank" href="http://facebook.com/saurav.kumar.271954">Saurav Kumar</a> </small>
+					</p>
+					<blockquote>"with great website comes greater responsivity"</blockquote>	
+
+				</section>
+				
+				<section>
+					<section>
+						<h2>Content</h2>
+						<ul>
+							<li>Overview</li>
+							<li>Concept</li>
+							<li>Ingredients</li>
+							<li>Resources</li>
+						</ul>
+					</section>
+				</section>
+				<!--TOC end-->
+				<section>
+					<section>
+						<h1>Overview</h1><h4>Artist - Canvas</h4>
+						<img class="responsive-img" src="assets/canvas.jpg" alt="">
+					</section>
+					<section>
+						<h2>Web Developers - Medium</h2>
+						<ul>
+							<li>Dimension is required</li>
+							<li>Establish a boundary</li>
+						</ul>
+						<img src="assets/browsers.jpg" alt="">
+						<h3>Browser - our canvas</h3>
+						<ul>
+							<li>Imperfections</li>
+							<li>Wide range of devices</li>
+						</ul>
+					</section>
+					<section>
+						<img src="assets/mob-stats.png" alt="">
+					</section>
+					<section>
+						<h2>Failed attempts to cater to all devices</h2>
+						<ul>
+							<li>Quarantined <a target="blank" href="http://www.bbc.co.uk/news/mobile/science-environment-13095307">URL</a></li>
+							<li>Separate mobile sites</li>
+							<img src="assets/failed_atmpt.jpg" class="responsive-img" alt="">
+						</ul>
+					</section>
+					<section>
+						<h2>Ethan Marcotte</h2>
+						<ul>
+							<li>Architecture</li>
+							<li>Artists experiment with <a target="blank" href="https://vimeo.com/14899669">surfaces</a> that react with voice</li>
+							<li>Smartglass - It responds to presence of occupants in a meeting room by </li>
+						</ul>
+						<blockquote> <small>Ethan Marcotte advocates we shift our design thinking to appropriate constraints associated with coding for an array of devices: using fluid grids, flexible images, and media queries, he shows us how to embrace the “ebb and flow of things” with responsive web design.</small></blockquote>
+					</section>
+				</section>
+				<!--Intro end-->
+				<section>
+					<section>
+						<h1>Concept</h1>
+					</section>
+					<section>
+						<h2>Prerequisites</h2>
+						<ol>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Passion</li>
+						</ol>
+					</section>
+					<section>
+						<h2>Unit</h2>
+						<img src="assets/units1.jpg" alt="">
+						<img src="assets/units2.jpg" alt="">
+					</section>
+					<section>
+						<h2>Principles - What is <a target="blank" href="http://alistapart.com/article/responsive-web-design">RWD?</a></h2>
+						<blockquote><small>An approach to web design aimed at crafting web applications to provide an optimal viewing and interaction experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices</small></blockquote>
+						<ul>
+							<li>Flexible grid based layout - allows layout to reflow to the screensize of any device</li>
+							<li>Flexible content - allows content such as images, videos, text to reflow with the layout</li>
+							<li>CSS3 Media Queries - allows to control each variation of the layout so that content is displayed optimally in all devices</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Terms - RWD confused with</h2>
+						<ul>
+							<li><strong>Progressive Enhancement</strong> <small>It is the principle if starting with rock-solid foundation and then adding enhancements if you know user-agents can handle the improved experience.</small></li>
+
+							<li><strong>Adaptive Web Design</strong> <small>It is just another term for progressive enhancement, it takes into account varying levels of markup, css, js and assitive tech. support. It focuses on broader approach than RWD.</small></li>
+
+							<li><strong>Mobile First</strong> <small>It is all about designing the entire experience for small screen devices, prioritizing the functionalities based on constraints of smaller screen. Because, it's always much harder to design for smaller screen after wider screen.</small></li>
+						</ul>
+						<blockquote><a target="blank" href="http://www.liquidapsive.com/" target="blank">three shades</a></blockquote>	
+					</section>
+				</section>
+				<section>
+					<section>
+						<h1>Ingredients</h1>
+						<blockquote>What makes up a responsive web design?</blockquote>
+						<ol>
+							<li>Flexible Grid</li>
+							<li>Flexible Content</li>
+							<li>Media Queries</li>
+						</ol>
+					</section>
+					<section>
+						<h3>Flexible grid</h3>
+						<img src="assets/grid.jpg" alt="">
+					</section>
+					<section>
+						<h3>Grid - Components</h3>
+							<li>Row</li>
+						<pre><code>.row{ clear: both; overflow: hidden }</code></pre>
+							<li>Columns</li>
+						<pre><code>.col{ overflow: hidden; margin-bottom: 1em }</code></pre>
+							<li>Column range classes</li>
+						<pre><code>.m-2col { width: 100% }</code><code>.m-1col { width: 46% }</code></pre>
+					</section>
+					<section>
+						<h3>Examples</h3>
+						<ol>
+							<li><a target="blank" href="examples/grid_0.html"> 2 - Columns</a></li>
+							<li><a target="blank" href="examples/grid_1.html"> Simple Grid</a></li>
+							<li><a target="blank" href="examples/grid_2.html"> Layout Grid</a></li>
+							<li><a target="blank" href="examples/grid_3.html"> Content Reflow</a></li>
+						</ol>
+					</section>
+					<section>
+						<h3>Responsive - Images</h3>
+						<img src="assets/resp_images.jpg" alt="">
+					</section>
+					<section>
+						<h3>Inline images</h3>
+						<p>Can be reduced and increased in size <br><small>but not beyond its maximum size</small></p>
+						<pre><code>img{ max-width: 100%; vertical-align: middle; border: 0 }</code></pre>
+						<br>
+						<img src="assets/img_white_gap.png" alt="">
+					</section>
+					<section>
+						<h3>Examples</h3>
+						<ol>
+							<li><a target="blank" href="examples/img_1.html">Simple Responsive Landscape Image</a></li>
+							<li><a target="blank" href="examples/img_2.html">Image grid</a></li>	
+						</ol>
+						
+					</section>
+					<section>
+						<h3>Background images</h3>
+							<li>Property - background-size: contain - the contain value will scale the image (while maintaining the aspect ratio) so that the entire image can fit inside the background area</li>
+							<img src="assets/bkg_contain.png" alt=""><br>
+							<pre><code>div{ background-size: contain }</code></pre>
+					</section>
+					<section>
+							<li>cover - the cover value will scale the image (while keeping the aspect ratio) to the smallest size that will completely cover the background area</li>
+							<img src="assets/bkg_cover.png" alt=""><br>
+							<pre><code>div{ background-size: cover }</code></pre>
+					</section>
+					<section>
+						<h3>How can we create responsive background images?</h3>
+					</section>
+					<section>
+						<h3>Methods for responsive background images</h3>
+							<li>Fixed-height method</li>
+							<p>This method sets a height on the container, and lets the background image "crop" as the layout is reduced in width</p>
+							<img src="assets/bkg_fixed.png" alt="">
+							<pre><code>.responsive-img { width: 100%; height: 300px; background-image: url(bkg_img.jpg); background-size: cover; background-position: center }</code></pre>
+					</section>
+					<section>
+							<li>Scaled-height method</li>
+							<p>It uses percentage value for height, and the height is a ratio of the with. This ensures that the aspect ratio remains correct, no matter how wide or narrow the container becomes</p>
+							<pre><code>.responsive-img { width: 100%; padding-bottom: 50%; background-image: url(bkg_img.jpg); background-size: cover; background-position: center }</code></pre>
+							<p>How did we get this 50% for padding-bottom?</p>
+								<li>Calculate the ratio between height and width or the image and convert this into a percentage. E.g. 300px/600px = 0.5; 0.5*100 = 50%</li>
+					</section>
+					<section>
+						<h3>Examples</h3>
+						<ol>
+							<li><a href="examples/bkgimg/bkgimg_1.html" target="blank">Single Image - Fixed Height</a></li>
+
+							<li><a href="examples/bkgimg/bkgimg_2.html" target="blank">Single Image - Scaled Height</a></li>
+							<li><a href="examples/bkgimg/index.html" target="blank">Multiple Images - Best Practice</a></li>
+						</ol>
+					</section>
+					<!--resp img end-->
+					<section>
+						<h3>Responsive video</h3>
+						<p>3 steps method</p>
+						<ul>
+							<li>Wrap the video inside a parent container</li>
+							<li>Style the video container so that it has the correct aspect ratio</li>
+							<li>Make the video stretch to fit the dimensions of the box</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Examples</h3>
+						<ol>
+							<li><a target="blank" href="examples/vid_1.html">3 step method</a></li>
+						</ol>
+					</section>
+					<section>
+						<h3>Responsive Form</h3>
+						Demo by <a target="blank" href="examples/form_1.html">example</a>
+					</section>
+					<!-- <section>
+						<h3>Responsive Navigation</h3>
+						Demo by <a target="blank" href="examples/nav_1.html">example</a>
+					</section> -->
+				</section>
+				<!--Responsive content end-->
+				<section>
+					<section>
+						<h2>Media Queries</h2>
+						<p>A module from the CSS3 specification</p>
+					</section>
+					<section>
+						<h3>Usage</h3>
+						<img src="assets/mq1.png" alt="">
+						<img src="assets/mq2.png" alt="">
+					</section>
+					<section>
+						<h3>Breakpoints</h3>
+						<p>Points where RWD layout adapts or changes based on specific media queries</p>
+						<p>How can one determine the breakpoints?</p>
+					</section>
+					<section>
+						<h3>Devices or ...?</h3>
+					</section>
+					<section>
+						<h3>Visualize</h3>
+						<img src="assets/mq3.png" alt="">
+						<img src="assets/mq4.png" alt="">
+					</section>
+					<section>
+						<h3>Visualize</h3>
+						<img src="assets/mq5.png" alt="">
+						<img src="assets/mq6.png" alt="">
+					</section>
+					<section>
+						<h3>Test - RWD</h3>
+						<img src="assets/test1.jpg" class="big-block-img" alt="">
+						<img src="assets/test2.jpg" class="big-block-img" alt="">
+						<div class="big-block-img"><blockquote><a target="blank" href="http://quirktools.com/screenfly/#u=http%3A//quarkwebs.com&w=600&h=1024&a=23">Screenfly</a></blockquote>
+						<blockquote><a  target="blank" href="http://www.responsinator.com/?url=quarkwebs.com">Responsinator</a></blockquote>
+						</div>
+					</section>
+					<section>
+						<h3>Caution</h3>
+						<pre><code><!-- css3-mediaqueries.js for IE less than 9 -->
+<!-- [if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]--></code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Workflow</h2>
+					</section>	
+					<section>
+						<h2><a target="blank" href="RWD DEMO/index.html">DEMO</a></h2>
+					</section>	
+				</section>
+				<section>
+					<section>
+						<h1>Resources</h1>
+						<img src="assets/rwd.png" alt="">
+						<img src="assets/responsible.png" alt="" class="book-size-sm">
+						<img src="assets/mobilefirst.png" alt="" class="book-size-sm">	
+						<blockquote><a target="blank" href="http://sitepoint.com">SitePoint</a></blockquote>
+					</section>
+					<section>
+						<img src="assets/smashing-book-5.png" alt="" class="book-size-md">
+						<blockquote><a target="blank" href="http://smashingmagazine.com">Smashing Magazine</a></blockquote>						
+					</section>
+				</section>
+			</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html> 

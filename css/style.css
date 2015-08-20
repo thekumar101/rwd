@@ -1,0 +1,28 @@
+/*Custom style*/
+.responsive-img{
+	max-width: 100%;
+	height: 400px;
+	vertical-align: middle;
+}
+
+.block-img{
+	width: 30%;
+	height: 200px;
+	float: left;
+}
+
+.big-block-img{
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+
+.book-size-sm{
+	width: 128px;
+	height: 198px;
+}
+
+.book-size-md{
+	width: 256px;
+	height: 100%;
+}

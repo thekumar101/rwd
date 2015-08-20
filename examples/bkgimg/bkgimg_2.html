@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<!--resets-->
+		<link rel="stylesheet" href="../css/resets_and_globals.css">
+		<!--grid specific styles-->
+		<style>
+		.responsive-bkg-img {
+			width: 95%;
+			padding-bottom: 66.66%;
+			background-image: url(images/bkg-resp.jpg);
+			background-position: center center;
+		
+			/* Image doesn't repeat */
+			background-repeat: no-repeat;
+			
+			/* Makes the image fixed in the viewport so that it doesn't move when
+			the content height is greater than the image height */
+			/*background-attachment: fixed;*/
+			
+			/* This is what makes the background image rescale based on its container's size */
+			background-size: cover;
+			
+		}
+		</style>
+	</head>
+	<body class="responsive-bkg-img">
+		<!--Pattern HTML-->
+		<!-- <div id="pattern" class="responsive-bkg-img">
+		</div> -->
+		<!--End Pattern HTML-->
+	</body>
+</html>

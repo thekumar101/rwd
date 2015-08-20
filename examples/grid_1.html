@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<!--resets-->
+		<link rel="stylesheet" href="../css/resets_and_globals.css">
+		<!--grid specific styles-->
+		<style>
+		.grid {
+			overflow: hidden;
+			padding: 0.5em 0 0 0.5em;
+			max-width: 76em;
+			margin: 0 auto;
+		}
+		.grid li {
+			padding: 0 0.5em 0.5em 0;
+		}
+		.grid li > div {
+			background: #808080;
+			padding: 7em 2em;
+			text-align: center;
+		}
+		.grid li a {
+			color: #fff;
+		}
+		
+		@media all and (min-width: 27em) {
+			.grid li {
+				width: 50%;
+				float: left;
+			}
+		}
+		
+		@media all and (min-width: 40em) {
+			.grid li {
+				width: 33.3333333%;
+			}
+			.grid li.wide {
+				width: 66.666666%;
+			}
+		}
+		@media all and (min-width: 60em) {
+			.grid li {
+				width: 25%;
+			}
+			.grid li.wide {
+				width: 50%;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<!--Pattern HTML-->
+		<section id="pattern" class="pattern">
+			<ul class="grid">
+				<li>
+					<div>
+						<a href="#">1</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">2</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">3</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">4</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">5</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">6</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">7</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">8</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">9</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">10</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">11</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<a href="#">12</a>
+					</div>
+				</li>
+			</ul>
+		</section>
+	</body>
+</html>
